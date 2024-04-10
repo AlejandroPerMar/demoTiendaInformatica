@@ -1,0 +1,242 @@
+$contentBackground: #fff !default;
+$contentBorder: #e0e0e0 !default;
+$toolbarIconFilter: unset !default;
+
+:root {
+  --kiwi-primary: #{$primary};
+  --kiwi-secondary: #{$secondary};
+  --kiwi-success: #{$success};
+  --kiwi-info: #{$info};
+  --kiwi-warning: #{$warning};
+  --kiwi-danger: #{$danger};
+  --kiwi-light: #{$light};
+  --kiwi-grayish: #{$grayish};
+  --kiwi-popupAlertError: #{$popupAlertError};
+  --kiwi-popupAlertSuccess: #{$popupAlertSuccess};
+  --kiwi-popupAlertInfo: #{$popupAlertInfo};
+  --kiwi-fontFamily: #{$fontFamily};
+
+  --kiwi-content-background: #{$contentBackground};
+  --kiwi-content-border: #{$contentBorder};
+
+  --kiwi-toolbar-filter: #{$toolbarIconFilter};
+
+  --kiwi-primary-gradient-right-2: linear-gradient(to right, #{$primary} 0%, #{lighten($primary, 10)} 100%);
+  --kiwi-primary-gradient-right-3: linear-gradient(to right, #{$primary} 0%, #{lighten($primary, 7)} 50%, #{lighten($primary, 14)} 100%);
+  --kiwi-primary-gradient-right-5: linear-gradient(to right, #{$primary} 0%, #{lighten($primary, 5)} 25%, #{lighten($primary, 10)} 50%, #{lighten($primary, 15)} 75%, #{lighten($primary, 20)} 100%);
+}
+
+@if variable-exists(darkBodyBackground) {
+  :root {
+    --kiwi-button-with-background: #{$darkBodyBackground};
+  }
+}
+
+@else {
+  :root {
+    --kiwi-button-with-background: #{$primary};
+  }
+}
+
+
+
+$form-label-color: null !default;
+$form-notch-div-border-color: null !default;
+$card-bg: null !default;
+$list-group-bg: null !default;
+$dropdown-bg: null !default;
+$nav-tabs-link-color: null !default;
+$input-color: null !default;
+$input-bg: null !default;
+$input-border-color: null !default;
+$form-outline-select-dropdown-bg: null !default;
+$form-outline-select-clear-btn-color: null !default;
+$form-outline-select-arrow-color: null !default;
+$option-selected-active-bg: null !default;
+$option-active-bg: null !default;
+$option-hover-not-disabled-bg: null !default;
+$option-color: null !default;
+$accordion-bg: null !default;
+$accordion-button-active-bg: null !default;
+$accordion-button-active-color: null !default;
+$datepicker-modal-container-background-color: null !default;
+$datepicker-footer-btn-background-color: null !default;
+$datepicker-footer-btn-state-background-color: null !default;
+$datepicker-footer-btn-color: null !default;
+$datepicker-cell-hover-background-color: null !default;
+$datepicker-cell-selected-background-color: null !default;
+$datepicker-cell-focused-background-color: null !default;
+$datepicker-previous-button-state-background-color: null !default;
+$datepicker-next-button-margin-background-color: null !default;
+$datepicker-previous-button-color: null !default;
+$datepicker-next-button-color: null !default;
+$datepicker-view-change-button-color: null !default;
+$datepicker-view-change-button-state-background-color: null !default;
+$timepicker-elements-background: null !default;
+$timepicker-footer-bg: null !default;
+$timepicker-button-color: null !default;
+
+
+
+@if variable-exists(darkBodyBackground) {
+  $form-label-color: darken($body-color, 10%) !default;
+  $form-notch-div-border-color: darken($body-color, 10%) !default;
+
+  /** CARD */
+  $card-bg: $contentBackground !default;
+  /** LIST */
+  $list-group-bg: transparent !default;
+  $dropdown-bg: lighten($contentBackground, 10%) !default;
+
+  /** Nav */
+  $nav-tabs-link-color: $body-color !default;
+
+  /** INPUT */
+  $input-color: #{$body-color} !default;
+  $input-bg: transparent !default;
+  $input-border-color: darken($body-color, 10%) !default;
+
+  /** SELECT */
+  $form-outline-select-dropdown-bg: $contentBackground !default;
+  $form-outline-select-clear-btn-color: #{$body-color} !default;
+  $form-outline-select-arrow-color: #{$body-color} !default;
+  $option-selected-active-bg: $contentBorder !default;
+  $option-active-bg: $contentBorder !default;
+  $option-hover-not-disabled-bg: $contentBorder !default;
+  $option-color: #{$body-color} !default;
+
+  /** Accordion */
+  $accordion-bg: transparent !default;
+  $accordion-button-active-bg: transparent !default;
+  $accordion-button-active-color: #{$body-color} !default;
+
+  /** Date picker */
+  $datepicker-modal-container-background-color: $contentBackground !default;
+  $datepicker-footer-btn-background-color: transparent !default;
+  $datepicker-footer-btn-state-background-color: $contentBorder !default;
+  $datepicker-footer-btn-color: #{$body-color} !default;
+  $datepicker-cell-hover-background-color: $contentBorder !default;
+  $datepicker-cell-selected-background-color: $contentBorder !default;
+  $datepicker-cell-focused-background-color: $contentBorder !default;
+  $datepicker-previous-button-state-background-color: $contentBorder !default;
+  $datepicker-next-button-margin-background-color: $contentBorder !default;
+  $datepicker-previous-button-color: #{$body-color} !default;
+  $datepicker-next-button-color: #{$body-color} !default;
+  $datepicker-view-change-button-color: #{$body-color} !default;
+  $datepicker-view-change-button-state-background-color: $contentBorder !default;
+
+  /** Timepicker */
+  $timepicker-elements-background: $contentBackground !default;
+  $timepicker-footer-bg: $contentBackground !default;
+  $timepicker-button-color: #{$body-color} !default;
+}
+
+$zindex-toast: 1199;
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+@import 'mdb-angular-calendar/scss/calendar.scss';
+@import "mdb-angular-file-upload/scss/file-upload.scss";
+@import "./bootstrap.scss";
+
+@if variable-exists(darkBodyBackground) {
+
+  :root {
+    --kiwi-body-background: #{$darkBodyBackground};
+    --kiwi-pwa-modal-background: #{$darkBodyBackground};
+  }
+
+  /** WYSIWYG */
+  mdb-wysiwyg .btn-light {
+    --mdb-btn-bg: #{lighten($contentBackground, 10%)};
+    --mdb-btn-disabled-bg: #{lighten($contentBackground, 10%)};
+    --mdb-btn-hover-bg: #{lighten($contentBackground, 20%)};
+    --mdb-btn-focus-bg: #{lighten($contentBackground, 20%)};
+    --mdb-btn-color: #{$body-color};
+    --mdb-btn-hover-color: #{$body-color};
+    --mdb-btn-disabled-color: #{$body-color};
+  }
+
+  input::placeholder {
+    color: #{darken($body-color, 20%)} !important;
+  }
+
+  app-toolbar {
+    height: 100%;
+    width: 100%;
+    background: #{$darkBodyBackground};
+  }
+
+  body.kiwixpro-portal .login-register-modal {
+    .card {
+      background: #{$darkBodyBackground} !important;
+    }
+
+    .nav-tabs {
+      background: #{$darkBodyBackground} !important;
+    }
+
+    .nav-link.active {
+      background: #{$darkBodyBackground} !important;
+    }
+
+    .tab-pane {
+      background: #{$darkBodyBackground} !important;
+    }
+  }
+
+  body.kiwixpro-portal .header-title-with-close {
+    color: #{$body-color} !important;
+    border-bottom: 1.66px solid var(--kiwi-primary) !important;
+
+    .close-icon-div i {
+      color: #{$body-color} !important;
+    }
+  }
+
+  mdb-sidenav-layout.app-main-panel mdb-sidenav .sidenav {
+    background: #{$darkBodyBackground};
+    border-left: 1px solid var(--kiwi-primary) !important;
+    border-right: 1px solid var(--kiwi-primary) !important;
+
+    ul {
+      padding: 0 !important;
+      border-radius: 0 !important;
+
+      li {
+        padding: 11px 13px;
+        cursor: pointer !important;
+        border-bottom: 1px solid var(--kiwi-primary) !important;
+        background: #{$darkBodyBackground};
+
+        span {
+          color: #{$body-color};
+        }
+      }
+    }
+  }
+
+  .kiwi-toolbar-menu-active {
+    a {
+      color: var(--kiwi-primary) !important;
+    }
+  }
+
+  .kiwi-navigation-menu-active {
+    div span {
+      color: var(--kiwi-primary) !important;
+    }
+  }
+
+  ngx-skeleton-loader {
+    .skeleton-loader {
+      background-color: #{darken($contentBackground, 7%)} !important;
+    }
+  }
+
+  mdb-datepicker-toggle button i {
+    color: #{$body-color};
+  }
+
+  mdb-timepicker-toggle button i {
+    color: #{$body-color};
+  }
+}

@@ -1,0 +1,67 @@
+.app-toolbar {
+  header {
+    position: relative;
+    height: var(--kiwi-toolbarheight);
+    nav {
+      .nav-row {
+        background: #fff;
+        .burger {
+          position: absolute;
+          right: 0;
+          margin-right: 15px;
+          mat-icon {
+            font-size: 25px !important;
+          }
+        }
+        .nav-l-col {
+          display: flex;
+          align-items: center;
+          .bars-btn  {
+            max-width: 46px;
+          }
+          a {
+            text-decoration: none;
+            span {
+              font-size: 19px;
+              font-weight: 700;
+              color: #0b0b0a;
+              text-transform: uppercase;
+            }
+          }
+        }
+        .nav-r-col {
+          padding: 0 6px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            li {
+              a {
+                color: #0b0b0a;
+                text-decoration: none;
+                font-weight: 600;
+                text-transform: uppercase;
+              }
+            }
+            .txt, .private, .flags {
+              margin: 0 11px;
+            }
+            .connected {
+              .user, .notif {
+                margin: 0 9px;
+              }
+            }
+            .app-user-menu {
+              margin: 0 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

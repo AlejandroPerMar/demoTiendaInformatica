@@ -1,0 +1,72 @@
+<div class="app-toolbar">
+  <header class="w-100">
+    <nav>
+      <div class="row nav-row">
+        <div class="nav-l-col col-md-4 col-3">
+          <!-- <button class="bars-btn ms-2 d-flex border border-0 align-items-center" (click)="controller.toggleNavigationMenu();" style="height: var(--kiwi-toolbarheight); background: transparent; min-width: unset; z-index: 1111;">
+            <img *ngIf="controller.coreMenu.length > 0" src="/portal-assets/images/shared/bars.svg" height="24" width="24" style="margin-left: 4px; margin-right: 13px;">
+          </button> -->
+          <a routerLink="/home" class="company-logo d-flex align-items-center me-2 ms-2">
+            <img class="me-2" src="/assets/logo/header-small.png" alt="Logo" style="max-height: 42px; max-width: 42px;">
+            <span class="hide-xxs hide-xs">Template</span>
+          </a>
+        </div>
+        <div class="nav-r-col col-md-8 col-9">
+          <div>
+            <ul>
+              <!-- <li class="txt hide-xxs hide-xs hide-sm">
+                <a [routerLink]="['/index']">
+                  {{controller.dedicatedI18nNavbarMenu.labels.HOME}}
+                </a>
+              </li> -->
+              <!-- <li class="txt hide-xxs hide-xs hide-sm">
+                <a [routerLink]="['/about']">
+                  {{controller.dedicatedI18nNavbarMenu.labels.ABOUT}}
+                </a>
+              </li>   -->
+              <!--
+
+              <li class="txt hide-xxs hide-xs hide-sm">
+                <a [routerLink]="['/gx']">
+                  {{controller.dedicatedI18nNavbarMenu.labels.GX}}
+                </a>
+              </li>
+
+              <li class="private">
+                <a class="hide-xl clickable" *ngIf="!controller.userId" (click)="privateArea()">
+                  <i class="fas fa-key" style="font-size: 21px;"></i>
+                </a>
+                <a class="hide-xs hide-sm clickable" *ngIf="!controller.userId" (click)="privateArea()">{{controller.dedicatedI18nNavbarMenu.labels.LOGIN}}</a>
+              </li>-->
+
+              <li class="flags d-flex align-items-center">
+                <button class="p-0 btn btn-sm shadow-0" (click)="controller.toggleLanguageSelector()">
+                  <img [src]="'/portal-assets/images/flags/flag-icon-' + controller.langu + '.svg'" alt="Flag" height="28" width="28">
+                </button>
+              </li>
+
+              <li class="connected" *ngIf="controller.userId">
+                <div class="d-flex align-items-center">
+                  <div class="notif clickable" (click)="controller.toggleRightMenuPanel('notifications')">
+                    <img class="i-notif-btn" src="/portal-assets/images/shared/bell.svg" alt="Notification" height="21" width="21">
+                  </div>
+                  <div class="user clickable" (click)="controller.toggleRightMenuPanel('contacts')">
+                    <img class="i-user-btn" src="/portal-assets/images/shared/user.svg" alt="User" height="21" width="21">
+                  </div>
+                </div>
+              </li>
+
+              <li class="app-user-menu" *ngIf="controller.userId">
+                <div class="d-flex">
+                  <button class="user-menu-btn border-0 d-flex justify-content-center align-items-center" style="background-color: transparent; padding-left: 0; padding-right: 0;" (click)="controller.toggleUserMenu()">
+                    <img class="rounded-circle" [src]="controller.userDeclaration?.avatar" alt="profile" height="40" width="40">
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>

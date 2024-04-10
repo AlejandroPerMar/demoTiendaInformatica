@@ -1,0 +1,34 @@
+@mixin make-col($size: false, $columns: $grid-columns) {
+  @if $size {
+    flex: 0 0 auto;
+    width: percentage(divide($size, $columns));
+  } @else {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    .col#{$infix}-1_5 {
+      @include make-col(1.5, $grid-columns);
+    }
+    .col#{$infix}-2_5 {
+      @include make-col(2.5, $grid-columns);
+    }
+    .col#{$infix}-3_5 {
+      @include make-col(3.5, $grid-columns);
+    }
+    .col#{$infix}-4_5 {
+      @include make-col(4.5, $grid-columns);
+    }
+    .col#{$infix}-5_5 {
+      @include make-col(5.5, $grid-columns);
+    }
+    .col#{$infix}-6_5 {
+      @include make-col(6.5, $grid-columns);
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "compileOnSave": false,
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "compilerOptions": {
+    "baseUrl": "projects/",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "strictNullChecks": false,
+    "target": "es2022",
+    "module": "es2022",
+    "lib": [
+      "es2022",
+      "dom"
+    ],
+    "types": [
+      "node"
+    ],
+    "useDefineForClassFields": false,
+    "paths": {
+      "@app/*": [
+        "framework/app/*"
+      ],
+      "@blank/*": [
+        "framework/blank/*"
+      ],
+      "@i18n/*": [
+        "framework/i18n/*"
+      ],
+      "@sdk-datamodel-metadata/*": [
+        "framework/sdk/datamodel/metadata/*"
+      ],
+      "@sdk-datamodel-object/*": [
+        "framework/sdk/datamodel/object/*"
+      ],
+      "@sdk-datamodel-structure/*": [
+        "framework/sdk/datamodel/structure/*"
+      ],
+      "@sdk-field/*": [
+        "framework/sdk/gui-layer/field/*"
+      ],
+      "@sdk-list/*": [
+        "framework/sdk/gui-layer/list/*"
+      ],
+      "@sdk-edm/*": [
+        "framework/sdk/edm/*"
+      ],
+      "@sdk-routing/*": [
+        "framework/sdk/routing/*"
+      ],
+      "@sdk-ts/*": [
+        "framework/sdk/ts/*"
+      ],
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictNullChecks": false,
+    "fullTemplateTypeCheck": true,
+  }
+}

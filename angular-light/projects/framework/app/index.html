@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="@@LANGU@@">
+<head>
+  <meta charset="utf-8">
+  <base href="@@BASE_HREF@@">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="https://@@DOMAIN@@/manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <!--@GENERATED@BEGIN-->
+  <!-- LEAVE THIS SECION EMPTY FOR PRODUCTION INDEX -->
+  <!--@GENERATED@END-->
+  <script type="text/javascript">
+    var __as2_controller__;
+    var __as2_async_controller__;
+    var __as2_resolve_controller__;
+  </script>
+  <style type="text/css">
+    .app-loading {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .app-loading .spinner {
+      height: 200px;
+      width: 200px;
+      animation: rotate 2s linear infinite;
+      transform-origin: center center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .app-loading .spinner .path {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      animation: dash 1.5s ease-in-out infinite;
+      stroke-linecap: round;
+      stroke: var(--kiwi-primary);
+    }
+
+    .app-loading .logo {
+      width: 80px;
+      height: 80px;
+      background: url('/assets/logo/loading.png') center center no-repeat;
+      background-size: 80px;
+    }
+
+    .loading-spinner .logo {
+      width: 120px;
+      height: 120px;
+      background: url('/assets/logo/loading.png') center center no-repeat;
+      background-size: 120px;
+    }
+
+    .loading-spinner .logo.logo-small {
+      width: 80px;
+      height: 80px;
+      background-size: 80px;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+
+      50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+      }
+
+      100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+      }
+    }
+  </style>
+  <!--@GENERATED_CUSTOM_HEAD@BEGIN-->
+  <!-- LEAVE THIS SECION EMPTY FOR PRODUCTION INDEX -->
+  <!--@GENERATED_CUSTOM_HEAD@END-->
+</head>
+<body style="overflow: hidden; margin: 0;" class="kiwixpro-portal">
+  <app-root>
+    <div class="app-loading">
+      <div class="logo"></div>
+      <svg class="spinner" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke-miterlimit="10" />
+      </svg>
+    </div>
+  </app-root>
+  <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <!--@GENERATED_CUSTOM_BODY@BEGIN-->
+  <!-- LEAVE THIS SECION EMPTY FOR PRODUCTION INDEX -->
+  <!--@GENERATED_CUSTOM_BODY@END-->
+</body>
+</html>

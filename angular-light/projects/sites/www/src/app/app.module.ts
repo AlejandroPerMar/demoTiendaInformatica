@@ -6,8 +6,7 @@ import { SHARED_CUSTOM_ROUTES, SHARED_DEFAULT_ROUTES, SHARED_ENVIRONMENT } from 
 
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
-import { AppToolbarComponent } from './toolbar/toolbar.component';
-import { ContactComponent } from './pages/contact/contact.component';
+import { AppToolbarComponent } from './components/toolbar/toolbar.component';
 
 const SHARED_ENVIRONMENT_PROVIDER = {
   provide: SHARED_ENVIRONMENT,
@@ -21,16 +20,21 @@ const SHARED_CUSTOM_ROUTES_PROVIDER = {
   useFactory: () => {
     return [{
       path: 'about',
-      loadChildren: () => import('./about/about.module').then(m => m.AppAboutModule)
+      loadChildren: () => import('./pages/about/about.module').then(m => m.AppAboutModule)
     },
     {
       path: 'index',
-      loadChildren: () => import('./index/index.module').then(m => m.AppIndexModule)
+      loadChildren: () => import('./pages/index/index.module').then(m => m.AppIndexModule)
     },
     {
       path: 'catalog',
       loadChildren: () => import('./pages/catalog/catalog.module').then(m => m.AppCatalogModule)
-    }];
+    },
+    {
+      path: 'product/:uuid',
+      loadChildren: () => import('./pages/product-detail/product-detail.module').then(m => m.AppProductDetailModule)
+    }
+  ];
   }
 };
 
@@ -58,7 +62,6 @@ const SHARED_DEFAULT_ROUTES_PROVIDER = {
   ],
   imports: [
     CommonModule,
-    ContactComponent,
     ...kiwiImports(),
     KiwiPageModule,
   ],

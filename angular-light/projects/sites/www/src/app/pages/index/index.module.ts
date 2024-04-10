@@ -5,8 +5,7 @@ import { AppIndexRoutingModule } from './index-routing.module';
 import { AppIndexComponent } from './index.component';
 
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
-import { FooterComponent } from '../footer/footer.component';
-import { ContactComponent } from '../pages/contact/contact.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 
 @NgModule({
@@ -18,7 +17,6 @@ import { ContactComponent } from '../pages/contact/contact.component';
     AppIndexRoutingModule,
     MdbCarouselModule,
     FooterComponent,
-    ContactComponent
   ],
   exports: [
   ]

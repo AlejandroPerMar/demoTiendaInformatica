@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppCatalogRoutingModule } from './catalog-routing.module';
 import { AppCatalogComponent } from './catalog.component';
-import { FooterComponent } from '../../footer/footer.component';
-import { ContactComponent } from '../contact/contact.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 
 @NgModule({
@@ -14,7 +13,6 @@ import { ContactComponent } from '../contact/contact.component';
   imports: [
     CommonModule,
     AppCatalogRoutingModule,
-    ContactComponent,
     FooterComponent
   ],
   exports: [

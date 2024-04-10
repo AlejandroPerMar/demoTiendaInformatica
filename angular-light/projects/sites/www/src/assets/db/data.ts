@@ -12,7 +12,7 @@ export const Data = {
         //id de product?? o enlace
       },
       {
-        "subtitle": "Big Sale Offer2",
+        "subtitle": "BUenos dias kelpy",
         "title": "Get The Best Deal on CCTV Camera",
         "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum praesentium et unde, magni rem aut dolore!",
         "price_text": "Combo Only:",

@@ -3,7 +3,7 @@ import { AbstractAppComponent } from '@app/app.component';
 import { Controller, CustomComponent } from '@sdk-ts/controller';
 
 import { I18nAppNavBarMenu } from './navbar.i18n';
-import { AppToolbarComponent } from './toolbar/toolbar.component';
+import { AppToolbarComponent } from './components/toolbar/toolbar.component';
 
 
 @Component({

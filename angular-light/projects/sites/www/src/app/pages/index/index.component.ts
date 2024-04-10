@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Controller, ControllerProvider } from '@sdk-ts/controller';
-import { products } from '../../assets/db/products';
-import { Data } from '../../assets/db/data'
+import { products } from '../../../assets/db/products';
+import { Data } from '../../../assets/db/data'
 
 interface Product {
   id?: number;

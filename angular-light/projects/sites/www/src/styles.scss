@@ -1,16 +1,18 @@
-$primary: #158f00;
+$primary: rgb(113, 113, 221);
 $secondary: #9fa6b2;
-$success: #00b74a;
+$success: rgb(113, 113, 221);
 $info: #39c0ed;
 $warning: #ff5100;
 $danger: #f93154;
 $light: #f9f9f9;
 $grayish: #9fa6b2;
-
+$darkBodyBackground: white;
+$contentBackground: white;
 $popupAlertError: #842029;
-$popupAlertSuccess: #10793a;
+$popupAlertSuccess: rgb(113, 113, 221);
 $popupAlertInfo: #797979;
-
+$body-color: black;
+$body-bg: white;
 $fontFamily: "Roboto";
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:wght@300,400,500,700&display=swap");

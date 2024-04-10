@@ -18,6 +18,7 @@ export class I18nAppNavBarMenu extends I18n<{
     return {
       HOME: 'Home',
       ABOUT: 'About',
+      CATALOG: 'Catalog',
       SERVICES: 'Services',
       CONTACT_US: 'Contact us',
       GALLERY: 'Gallery',
@@ -29,6 +30,7 @@ export class I18nAppNavBarMenu extends I18n<{
     return {
       HOME: 'Inicio',
       ABOUT: 'Acerca de',
+      CATALOG: 'Catálogo',
       SERVICES: 'Servicios',
       CONTACT_US: 'Contáctenos',
       GALLERY: 'Galería',
@@ -40,6 +42,7 @@ export class I18nAppNavBarMenu extends I18n<{
     return {
       HOME: 'Accueil',
       ABOUT: 'À propos',
+      CATALOG: 'Catálogo',
       SERVICES: 'Prestations',
       CONTACT_US: 'Nous contacter',
       GALLERY : 'Galerie',
@@ -51,6 +54,7 @@ export class I18nAppNavBarMenu extends I18n<{
     return {
       HOME: 'Heim',
       ABOUT: 'Um',
+      CATALOG: 'Catálogo',
       SERVICES: 'Dienstleistungen',
       CONTACT_US: 'Kontaktiere uns',
       GALLERY: 'Galerie',
@@ -62,6 +66,7 @@ export class I18nAppNavBarMenu extends I18n<{
     return {
       HOME: 'Casa',
       ABOUT: 'Informazioni',
+      CATALOG: 'Catálogo',
       SERVICES: 'Servizi',
       CONTACT_US: 'Contattaci',
       GALLERY: 'Galleria',

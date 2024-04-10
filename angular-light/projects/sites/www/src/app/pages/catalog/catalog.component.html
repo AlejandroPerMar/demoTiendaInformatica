@@ -1,0 +1,27 @@
+<div class="app-catalog">
+    <div>
+  
+    </div>
+    <div class="container">        
+      <div class="row">
+        <ng-container *ngFor="let product of products;">
+          <div class="col-md-3 card_container">
+            <div class="card">
+              <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+                <img [src]="product.urlImagen" class="img-fluid" [alt]="product.nombre" />
+                <a href="#!" class="btn btn-overlay"> <i class="fas fa-shopping-cart"></i> Shop</a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{ product.nombre }}</h5>
+                <p class="card-text">{{ product.descripcion }}</p>
+                <p class="card-text">Precio: {{ product.precio}}</p>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+<app-contact></app-contact>
+
+  <app-footer></app-footer>

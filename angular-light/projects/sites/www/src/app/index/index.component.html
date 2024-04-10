@@ -4,68 +4,22 @@
       <div class="row">
         <div class="col-lg-8 col-12">
           <mdb-carousel [controls]="true">
-            <mdb-carousel-item [interval]="5000">
-              <div class="hero-banner-1 hero-banner-1-1">
+            <mdb-carousel-item *ngFor="let item of data.hero.banner_1; let i = index" [interval]="5000">
+              <div class="hero-banner-1" [style.background-image]="'url(' + item.img + ')'">
                 <div class="content">
                   <h2>
-                    <span>Big sale Offer</span>
-                    Get The BEst Deal on CCTV Camera
+                    <span>{{item.subtitle}}</span>
+                    {{item.title}}
                   </h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem
-                    delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum
-                    praesentium et unde, magni rem aut dolore!
+                    {{item.content}}
                   </p>
                   <h3>
-                    <span>Combo Only:</span>
-                    590.00$
+                    <span>{{item.price_text}}</span>
+                    {{item.price}}
                   </h3>
                   <div class="button">
-                    <a href="#" type="button" class="btn btn-primary">Shop Now</a>
-                  </div>
-                </div>
-              </div>
-            </mdb-carousel-item>
-            <mdb-carousel-item [interval]="5000">
-              <div class="hero-banner-1 hero-banner-1-2">
-                <div class="content">
-                  <h2>
-                    <span>Big sale Offer</span>
-                    Get The BEst Deal on CCTV Camera
-                  </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem
-                    delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum
-                    praesentium et unde, magni rem aut dolore!
-                  </p>
-                  <h3>
-                    <span>Combo Only:</span>
-                    590.00$
-                  </h3>
-                  <div class="button">
-                    <a href="#" type="button" class="btn btn-primary">Shop Now</a>
-                  </div>
-                </div>
-              </div>
-            </mdb-carousel-item>
-            <mdb-carousel-item [interval]="5000">
-              <div class="hero-banner-1 hero-banner-1-3">
-                <div class="content">
-                  <h2>
-                    <span>Big sale Offer</span>
-                    Get The BEst Deal on CCTV Camera
-                  </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem
-                    delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum
-                    praesentium et unde, magni rem aut dolore!
-                  </p>
-                  <h3>
-                    <span>Combo Only:</span>
-                    590.00$
-                  </h3>
-                  <div class="button">
-                    <a href="#" type="button" class="btn btn-primary">Shop Now</a>
+                    <a href="#" type="button" class="btn btn-primary">{{item.button}}</a>
                   </div>
                 </div>
               </div>
@@ -79,12 +33,12 @@
                 <div class="row content">
                   <div class="col-8">
                     <h5>
-                      New line required
+                      {{data.hero.banner_2.subtitle}}
                     </h5>
                     <h2>
-                      iPhone 12 Pro Max
+                      {{data.hero.banner_2.title}}
                     </h2>
-                    <h3>300 $</h3>
+                    <h3>{{data.hero.banner_2.price}}</h3>
                   </div>
                 </div>
               </div>
@@ -92,10 +46,10 @@
             <div class="col-lg-12 col-md-6 col-12">
               <div class="hero-banner-3">
                 <div class="content">
-                  <h2>Weekly Sale!</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero suscipit </p>
+                  <h2>{{data.hero.banner_3.title}}</h2>
+                  <p>{{data.hero.banner_3.content}}</p>
                   <div class="button">
-                    <a href="#" type="button" class="btn btn-primary">Shop Now</a>
+                    <a href="#" type="button" class="btn btn-primary">{{data.hero.banner_3.button}}</a>
                   </div>
                 </div>
               </div>
@@ -107,33 +61,27 @@
 
     <section class="featured-categories">
       <h2>
-        Featured Categories
+        {{data.featuredCategories.title}}
       </h2>
       <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem nulla ut, vero fugiat eius rem
-        corrupti, deserunt facere ex reiciendis ipsam maxime ratione expedita </p>
+      <p>{{data.featuredCategories.content}}</p>
 
       <div class="content">
         <div class="row">
-
-          <div *ngFor="let item of [0,1,2,3,4,5]" class="col-lg-4 col-md-6 col-12">
+          <div *ngFor="let category of data.featuredCategories.categories; let i = index"
+            class="col-lg-4 col-md-6 col-12">
             <div class="category">
-              <h3>TV &amp; Audios</h3>
+              <h3>{{category.title}}</h3>
               <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
+                <li *ngFor="let link of category.links">
+                  <a href="product-grids.html"> {{link}}</a>
+                </li>
               </ul>
               <div class="images">
-                <img
-                  src="https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
-                  alt="#">
+                <img [src]="category.img" alt="#">
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -142,29 +90,23 @@
   <section class="section-products pt-5">
     <div class="container trending-products">
       <h2>
-        TRending Products
+        {{data.trendingProducts.title}}
       </h2>
       <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem nulla ut, vero fugiat eius rem
-        corrupti, deserunt facere ex reiciendis ipsam maxime ratione expedita </p>
+      <p>{{data.trendingProducts.content}} </p>
 
       <div class="content">
         <div class="row">
-
-          <div *ngFor="let item of [0, 1, 2, 3, 4, 5, 6, 7]" class="col-lg-3 col-md-4 col-6">
-            <div class="category">
-              <h3>TV &amp; Audios</h3>
-              <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
-              </ul>
-              <div class="images">
-                <img
-                  src="https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
-                  alt="#">
+          <div *ngFor="let product of data.trendingProducts.products;" class="col-md-3 col-6 card_container p-3"> 
+            <div class="card">
+              <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+                <img [src]="product.img" class="img-fluid" [alt]="product.nombre" />
+                <a href="#!" class="btn btn-overlay"> <i class="fas fa-shopping-cart"></i> Shop</a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <p class="card-text">Price: {{ product.price}}</p>
               </div>
             </div>
           </div>
@@ -174,32 +116,20 @@
   </section>
   <section class="section-banners container">
     <div class="row">
-      <div class="col-12 col-sm-6">
+      <div *ngFor="let banner of data.sectionBanners.banners;" class="col-12 col-sm-6">
         <div class="banner">
           <div class="row content">
             <div class="col-8">
               <h5>
-                New line required
+                {{banner.title}}
               </h5>
               <h2>
-                iPhone 12 Pro Max
+                {{banner.product}}
               </h2>
-              <h3>300 $</h3>
+              <h3>{{banner.price}}</h3>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6">
-        <div class="banner">
-          <div class="row content">
-            <div class="col-8">
-              <h5>
-                New line required
-              </h5>
-              <h2>
-                iPhone 12 Pro Max
-              </h2>
-              <h3>300 $</h3>
+            <div class="col-4">
+              <img [src]="banner.img" alt="#" style="max-width: 100%;">
             </div>
           </div>
         </div>
@@ -209,12 +139,11 @@
   <section class="section-offers pt-5">
     <div class="container offers-products">
       <h2>
-        Specia Offer
+        {{ data.sectionOffers.title }}
       </h2>
       <hr>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem nulla ut, vero fugiat eius rem
-        corrupti, deserunt facere ex reiciendis ipsam maxime ratione expedita
+         {{ data.sectionOffers.content }}
       </p>
 
       <div class="content">
@@ -222,19 +151,17 @@
           <div class="col-md-8 col-12">
             <div class="row">
 
-              <div *ngFor="let item of [0, 1, 2]" class="col-lg-4 col-md-4 col-12">
+              <div *ngFor="let product of data.sectionOffers.products_1;" class="col-lg-4 col-md-4 col-12">
                 <div class="offers">
-                  <h3>TV &amp; Audios</h3>
+                  <h3>{{ product.title }}</h3>
                   <ul>
-                    <li><a href="product-grids.html">Smart Television</a></li>
-                    <li><a href="product-grids.html">QLED TV</a></li>
-                    <li><a href="product-grids.html">Audios</a></li>
-                    <li><a href="product-grids.html">Headphones</a></li>
-                    <li><a href="product-grids.html">View All</a></li>
+                    <li *ngFor="let link of product.links">
+                      <a href="product-grids.html">{{link}}</a>
+                    </li>
                   </ul>
                   <div class="images">
                     <img
-                      src="https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+                      [src]="product.img"
                       alt="#">
                   </div>
                 </div>
@@ -244,29 +171,27 @@
               <div class="row content">
                 <div class="col-8">
                   <h5>
-                    New line required
+                    {{ data.sectionOffers.banner.title }}
                   </h5>
                   <h2>
-                    iPhone 12 Pro Max
+                    {{ data.sectionOffers.banner.product }}
                   </h2>
-                  <h3>300 $</h3>
+                  <h3>{{ data.sectionOffers.banner.price }}</h3>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-12">
             <div class="offers" style="height: 95%;">
-              <h3>TV &amp; Audios</h3>
+              <h3>{{ data.sectionOffers.products_2.title }}</h3>
               <ul>
-                <li><a href="product-grids.html">Smart Television</a></li>
-                <li><a href="product-grids.html">QLED TV</a></li>
-                <li><a href="product-grids.html">Audios</a></li>
-                <li><a href="product-grids.html">Headphones</a></li>
-                <li><a href="product-grids.html">View All</a></li>
+                <li *ngFor="let link of data.sectionOffers.products_2.links">
+                  <a href="product-grids.html">{{link}}</a>
+                </li>
               </ul>
               <div class="images">
                 <img
-                  src="https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+                  [src]="data.sectionOffers.products_2.img"
                   alt="#">
               </div>
             </div>
@@ -280,8 +205,8 @@
   <section class="section-product-list">
     <div class="container">
       <div class="row">
-        <div *ngFor="let item of [0, 1, 2]" class="col-lg-4 col-md-4 col-12">
-          <h4 class="">Best Sellers</h4>
+        <div *ngFor="let product of data.bestSellers.products" class="col-lg-4 col-md-4 col-12">
+          <h4 class="">{{ data.bestSellers.title }}</h4>
           <div class="single-list">
             <div class="list-image">
               <a href="product-grids.html"><img
@@ -289,9 +214,9 @@
             </div>
             <div class="list-info">
               <h3>
-                <a href="product-grids.html">GoPro Hero4 Silver</a>
+                <a href="product-grids.html">{{ product.name }}</a>
               </h3>
-              <span>$287.99</span>
+              <span>{{ product.price }}</span>
             </div>
           </div>
           <div class="single-list">
@@ -301,9 +226,9 @@
             </div>
             <div class="list-info">
               <h3>
-                <a href="product-grids.html">Puro Sound Labs BT2200</a>
+                <a href="product-grids.html">{{ product.name }}</a>
               </h3>
-              <span>$95.00</span>
+              <span>{{ product.price }}</span>
             </div>
           </div>
           <div class="single-list">
@@ -313,9 +238,9 @@
             </div>
             <div class="list-info">
               <h3>
-                <a href="product-grids.html">HP OfficeJet Pro 8710</a>
+                <a href="product-grids.html">{{ product.name }}</a>
               </h3>
-              <span>$120.00</span>
+              <span>{{ product.price }}</span>
             </div>
           </div>
         </div>
@@ -327,40 +252,13 @@
   <section class="section-info">
     <div class="container">
       <ul>
-        <li>
+        <li *ngFor="let info of data.infoSection.items">
           <div class="media-icon">
             <i class="lni lni-delivery"></i>
           </div>
           <div class="media-body">
-            <h5>Free Shipping</h5>
-            <span>On order over $99</span>
-          </div>
-        </li>
-        <li>
-          <div class="media-icon">
-            <i class="lni lni-delivery"></i>
-          </div>
-          <div class="media-body">
-            <h5>Free Shipping</h5>
-            <span>On order over $99</span>
-          </div>
-        </li>
-        <li>
-          <div class="media-icon">
-            <i class="lni lni-delivery"></i>
-          </div>
-          <div class="media-body">
-            <h5>Free Shipping</h5>
-            <span>On order over $99</span>
-          </div>
-        </li>
-        <li>
-          <div class="media-icon">
-            <i class="lni lni-delivery"></i>
-          </div>
-          <div class="media-body">
-            <h5>Free Shipping</h5>
-            <span>On order over $99</span>
+            <h5>{{ info.title }}</h5>
+            <span>{{ info.text_price }} {{ info.price }}</span>
           </div>
         </li>
       </ul>
@@ -368,6 +266,6 @@
 
   </section>
 </div>
-
+<app-contact></app-contact>
 
 <app-footer></app-footer>

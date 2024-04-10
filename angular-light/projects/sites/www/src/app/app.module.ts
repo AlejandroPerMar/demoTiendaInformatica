@@ -26,6 +26,10 @@ const SHARED_CUSTOM_ROUTES_PROVIDER = {
     {
       path: 'index',
       loadChildren: () => import('./index/index.module').then(m => m.AppIndexModule)
+    },
+    {
+      path: 'catalog',
+      loadChildren: () => import('./pages/catalog/catalog.module').then(m => m.AppCatalogModule)
     }];
   }
 };

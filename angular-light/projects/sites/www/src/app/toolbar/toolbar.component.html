@@ -7,18 +7,23 @@
             <img *ngIf="controller.coreMenu.length > 0" src="/portal-assets/images/shared/bars.svg" height="24" width="24" style="margin-left: 4px; margin-right: 13px;">
           </button> -->
           <a routerLink="/home" class="company-logo d-flex align-items-center me-2 ms-2">
-            <img class="me-2" src="/assets/logo/header-small.png" alt="Logo" style="max-height: 42px; max-width: 42px;">
-            <span class="hide-xxs hide-xs">Template</span>
+            <img class="me-2" src="../../assets/img/4855e369-cf18-4005-aa02-8f56eda193c7.webp" alt="Logo" style="max-height: 42px; max-width: 42px;">
+            <span class="hide-xxs hide-xs">Demo Tienda Informática</span>
           </a>
         </div>
         <div class="nav-r-col col-md-8 col-9">
           <div>
             <ul>
-              <!-- <li class="txt hide-xxs hide-xs hide-sm">
+              <li class="txt hide-xxs hide-xs hide-sm">
                 <a [routerLink]="['/index']">
                   {{controller.dedicatedI18nNavbarMenu.labels.HOME}}
                 </a>
-              </li> -->
+              </li>
+              <li class="text">
+                <a [routerLink]="['/catalog']">
+                  {{controller.dedicatedI18nNavbarMenu.labels.CATALOG}}
+                </a>
+              </li>
               <!-- <li class="txt hide-xxs hide-xs hide-sm">
                 <a [routerLink]="['/about']">
                   {{controller.dedicatedI18nNavbarMenu.labels.ABOUT}}

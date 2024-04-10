@@ -1,17 +1,17 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Controller, ControllerProvider } from '@sdk-ts/controller';
 import { products } from '../../assets/db/products';
-
+import { Data } from '../../assets/db/data'
 
 interface Product {
-  id: number;
-  nombre: string;
-  descripcion: string;
-  categorias: string[];
-  etiquetas: string[];
-  precio: number;
-  precioRebajado?: number;
-  urlImagen: string;
+  id?: number;
+  name?: string;
+  description?: string;
+  category?: string[];
+  tags?: string[];
+  price?: string;
+  menorPrice?: number;
+  img?: string;
 }
 
 
@@ -24,8 +24,8 @@ interface Product {
 export class AppIndexComponent implements OnInit {
 
   public controller: Controller;
-
   public products: Product[];
+  public data: any;
 
   constructor(private changeDetectorRef: ChangeDetectorRef) {
     this.controller = ControllerProvider.instance;
@@ -34,6 +34,8 @@ export class AppIndexComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.data = this.getData();
+    console.log("DATA", this.data)
     this.controller.withPortalBanner = false;
     this.controller.updateNavigationMenuMode('over');
   }
@@ -44,6 +46,10 @@ export class AppIndexComponent implements OnInit {
 
   private onResize: () => void = () => {
     this.changeDetectorRef.markForCheck();
+  }
+
+  getData(){
+    return Data;
   }
 
 }

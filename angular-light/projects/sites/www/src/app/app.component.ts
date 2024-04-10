@@ -23,6 +23,11 @@ export class AppComponent extends AbstractAppComponent {
       label: 'About',
       route: '/about'
     });
+    controller.dedicatedMenu.push({
+      name: 'CATALOG',
+      label: 'CATALOG',
+      route: '/catalog'
+    });
 
     controller.dedicatedI18nNavbarMenu = new I18nAppNavBarMenu();
     controller.CustomComponentState.set(CustomComponent.Toolbar, true);

@@ -1,5 +1,6 @@
 export const products=[
   {
+    "uuid": "1",
     "name": "Philips 271V8LAB",
     "description": "Immerse yourself with Philips' 27\" FHD Monitor. Enjoy clear 1920x1080 resolution, 100Hz refresh rate, and built-in speakers. Connect via VGA or HDMI for seamless setup",
     "price": "129,9",

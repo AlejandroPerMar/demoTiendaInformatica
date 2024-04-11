@@ -245,19 +245,19 @@ export const Data = {
     "title": "Best Sellers",
     "products": [
       {
-        "name": "GoPro Hero4",
-        "price": "$287.99",
-        "image": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "name": "BenQ GW2790E",
+        "price": "$131,21",
+        "image": "BenQ_GW2790E.png"
       },
       {
-        "name": "Puro Sound Labs BT2200",
-        "price": "$95.00",
-        "image": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "name": "Corsair VIRTUOSO RGB",
+        "price": "$179,99",
+        "image": "Corsair_VIRTUOSO_RGB.png"
       },
       {
-        "name": "HP OfficeJet Pro 8710",
-        "price": "$120.00",
-        "image": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "name": "Logitech G502",
+        "price": "$99,99",
+        "image": "Logitech_G502.png"
       }
     ]
   },
@@ -269,19 +269,19 @@ export const Data = {
         "price": "$99"
       },
       {
-        "title": "Free Shipping",
-        "text_price": "On order over",
-        "price": "$99"      
+        "title": "Online and in-store Payment",
+        "text_price": "Convenient and for everyone",
+        "price": ""      
       },
       {
-        "title": "Free Shipping",
-        "text_price": "On order over",
-        "price": "$99"      
-      },
+        "title": "High Quality Products",
+        "text_price": "Products carefully selected by our professionals",
+        "price": ""      
+      }, 
       {
-        "title": "Free Shipping",
-        "text_price": "On order over",
-        "price": "$99"      
+        "title": "30 Days Warranty",
+        "text_price": "On every product in our store",
+        "price": ""      
       }
     ]
   }

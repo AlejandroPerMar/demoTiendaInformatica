@@ -2,17 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
 import { Controller, ControllerProvider } from '@sdk-ts/controller';
 import { products } from '../../../assets/db/products';
 import { Data } from '../../../assets/db/data'
-
-interface Product {
-  id?: number;
-  name?: string;
-  description?: string;
-  category?: string[];
-  tags?: string[];
-  price?: string;
-  menorPrice?: number;
-  img?: string;
-}
+import { Product } from '../../interfaces/product.interface';
 
 
 @Component({

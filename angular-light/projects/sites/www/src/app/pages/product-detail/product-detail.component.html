@@ -1,4 +1,65 @@
-<div class="app-product-detail">
+<div class="app-product-detail pt-5">
+    <div class="container">
+        <div class="card-product">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="product-images">
+                        <div class="image-selected">
+                            <img [src]="selectedImage || '../../../assets/img/' + product.avatar" id="current" alt="#">
+                        </div>
+                        <div class="images">
+                            <img *ngFor="let image of product.img" [src]="'../../../assets/img/' + image" id="current"
+                                alt="#" (click)="selectImage('../../../assets/img/' + image)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="product-info">
+                        <h2 class="title">{{product.name}}</h2>
+                        <p class="category">{{product.tags}}</p>
+                        <h3 class="price">{{product.price}} $</h3>
+                        <p class="info-text">{{product.shortDescription}}</p>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="color">Quantity</label>
+                                    <input type="number" class="form-control" id="quantity" min="1" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-buttons">
+                            <div class="row align-items-end">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="button cart-button">
+                                        <button class="btn" style="width: 100%;" (click)="addToCart()">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="wish-button">
+                                        <button class="btn">
+                                            <i class="far fa-heart"></i>
+                                            To Wishlist
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="product-extend-info">
+            <div class="row">
+                <div class="info">
+                    <h4>Details</h4>
+                    <p>{{product.description}}</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="product-reviews">
+
+        </div>
+    </div>
 </div>

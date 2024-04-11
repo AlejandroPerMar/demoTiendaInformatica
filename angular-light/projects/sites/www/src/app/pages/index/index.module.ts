@@ -16,7 +16,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
     CommonModule,
     AppIndexRoutingModule,
     MdbCarouselModule,
-    FooterComponent,
   ],
   exports: [
   ]

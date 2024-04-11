@@ -4,13 +4,19 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="product-images">
+
+                        <mdb-multi-item-carousel [slides]="product.images"></mdb-multi-item-carousel>
+
                         <div class="image-selected">
-                            <img [src]="selectedImage || '../../../assets/img/' + product.avatar" id="current" alt="#">
+                            <img [src]="selectedImage || product.avatar" id="current" alt="#">
                         </div>
+
                         <div class="images">
-                            <img *ngFor="let image of product.img" [src]="'../../../assets/img/' + image" id="current"
-                                alt="#" (click)="selectImage('../../../assets/img/' + image)">
+                            <img *ngFor="let image of product.images" [src]="image.img" id="current" alt="#"
+                                (click)="selectImage(image)">
                         </div>
+                        
+                        
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-12">
@@ -31,7 +37,8 @@
                             <div class="row align-items-end">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="button cart-button">
-                                        <button class="btn" style="width: 100%;" (click)="addToCart()">Add to Cart</button>
+                                        <button class="btn" style="width: 100%;" (click)="addToCart()">Add to
+                                            Cart</button>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12">
@@ -63,3 +70,4 @@
         </div>
     </div>
 </div>
+

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { AppProductDetailRoutingModule } from './product-detail-routing.module';
 import { AppProductDetailComponent } from './product-detail.component';
+import { MdbMultiItemCarouselModule } from 'mdb-angular-multi-item-carousel';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { AppProductDetailComponent } from './product-detail.component';
   imports: [
     CommonModule,
     AppProductDetailRoutingModule,
-    MdbCarouselModule
+    MdbMultiItemCarouselModule
   ],
   exports: [
   ]

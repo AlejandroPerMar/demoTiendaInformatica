@@ -8,7 +8,7 @@ export const Data = {
         "price_text": "Combo Only:",
         "price": "590$",
         "button": "Shop Now",
-        "img": "../../assets/img/banner1.png"
+        "images": "../../assets/img/banner1.png"
         //id de product?? o enlace
       },
       {
@@ -18,7 +18,7 @@ export const Data = {
         "price_text": "Combo Only:",
         "price": "590$",
         "button": "Shop Now",
-        "img": "../../assets/img/banner2.png"
+        "images": "../../assets/img/banner2.png"
         //id de product?? o enlace
       },
       {
@@ -28,7 +28,7 @@ export const Data = {
         "price_text": "Combo Only:",
         "price": "590$",
         "button": "Shop Now",
-        "img": "../../assets/img/banner3.png"
+        "images": "../../assets/img/banner3.png"
         //id de product?? o enlace
       },
 
@@ -37,14 +37,14 @@ export const Data = {
       "subtitle": "New line required",
       "title": "iphone 13 pro max",
       "price": "590$",
-      "img": "../../assets/img/banner3.png"
+      "images": "../../assets/img/banner3.png"
       //enlace
     },
     "banner_3": {
       "title": "Weekly Sale!",
       "content": "Saving up to 50% off all online store items this week.",
       "button": "Shop Now",
-      "img": "../../assets/img/banner3.png"
+      "images": "../../assets/img/banner3.png"
       //enlace
     }
   },
@@ -62,7 +62,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       },
       {
         "title": "TV & Audios",
@@ -73,7 +73,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       },
       {
         "title": "TV & Audios",
@@ -84,7 +84,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       },
       {
         "title": "TV & Audios",
@@ -95,7 +95,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       },
       {
         "title": "TV & Audios",
@@ -106,7 +106,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       },
       {
         "title": "TV & Audios",
@@ -117,7 +117,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       },
     ]
   },
@@ -128,41 +128,41 @@ export const Data = {
       {
         "name": "GoPro Hero4 Silver",
         "price": "$287.99",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       },
       {
         "name": "HP OfficeJet Pro 8710",
         "price": "$120.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       },
       {
         "name": "GoPro Hero4 Silver",
         "price": "$287.99",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       },
       {
         "name": "HP OfficeJet Pro 8710",
         "price": "$120.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       }, {
         "name": "GoPro Hero4 Silver",
         "price": "$287.99",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       }
     ]
   },
@@ -172,13 +172,13 @@ export const Data = {
         "title": "New line required",
         "product": "iPhone 12",
         "price": "300 $",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       },
       {
         "title": "New line required",
         "product": "iPhone 12 Pro Max",
         "price": "300 $",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       }
     ]
   },
@@ -195,7 +195,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       },
       {
         "title": "TV & Audios",
@@ -206,7 +206,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       },
       {
         "title": "TV & Audios",
@@ -217,7 +217,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
       }
     ],
     "products_2": 
@@ -230,14 +230,14 @@ export const Data = {
         "Headphones",
         "View All"
       ],
-      "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+      "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
     },
     "banner": 
       {
         "title": "New line required",
         "product": "iPhone 12",
         "price": "300 $",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
       }
     
   },

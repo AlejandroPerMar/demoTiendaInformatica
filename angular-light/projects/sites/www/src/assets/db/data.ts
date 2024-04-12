@@ -264,23 +264,23 @@ export const Data = {
   "infoSection": {
     "items": [
       {
+        "title": "High Quality Products",
+        "text_price": "Carefully selected by our professionals",
+        "price": ""      
+      }, 
+      {
         "title": "Free Shipping",
         "text_price": "On order over",
         "price": "$99"
       },
       {
-        "title": "Online and in-store Payment",
-        "text_price": "Convenient and for everyone",
+        "title": "30 Days Warranty",
+        "text_price": "On every product in our store",
         "price": ""      
       },
       {
-        "title": "High Quality Products",
-        "text_price": "Products carefully selected by our professionals",
-        "price": ""      
-      }, 
-      {
-        "title": "30 Days Warranty",
-        "text_price": "On every product in our store",
+        "title": "Online and in-store Payment",
+        "text_price": "Convenient and for everyone",
         "price": ""      
       }
     ]

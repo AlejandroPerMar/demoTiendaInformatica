@@ -14,7 +14,7 @@ import { Product } from '../../interfaces/product.interface';
 export class AppIndexComponent implements OnInit {
 
   public controller: Controller;
-  public products: Product[];
+  public products: any[];
   public data: any;
 
   constructor(private changeDetectorRef: ChangeDetectorRef) {

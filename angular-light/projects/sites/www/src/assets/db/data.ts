@@ -8,7 +8,7 @@ export const Data = {
         "price_text": "Combo Only:",
         "price": "590$",
         "button": "Shop Now",
-        "images": "../../assets/img/banner1.png"
+        "images": "/assets/img/banner1.png"
         //id de product?? o enlace
       },
       {
@@ -18,7 +18,7 @@ export const Data = {
         "price_text": "Combo Only:",
         "price": "590$",
         "button": "Shop Now",
-        "images": "../../assets/img/banner2.png"
+        "images": "/assets/img/banner2.png"
         //id de product?? o enlace
       },
       {
@@ -28,7 +28,7 @@ export const Data = {
         "price_text": "Combo Only:",
         "price": "590$",
         "button": "Shop Now",
-        "images": "../../assets/img/banner3.png"
+        "images": "/assets/img/banner3.png"
         //id de product?? o enlace
       },
 
@@ -37,14 +37,14 @@ export const Data = {
       "subtitle": "New line required",
       "title": "iphone 13 pro max",
       "price": "590$",
-      "images": "../../assets/img/banner3.png"
+      "images": "/assets/img/banner3.png"
       //enlace
     },
     "banner_3": {
       "title": "Weekly Sale!",
       "content": "Saving up to 50% off all online store items this week.",
       "button": "Shop Now",
-      "images": "../../assets/img/banner3.png"
+      "images": "/assets/img/banner2.png"
       //enlace
     }
   },
@@ -230,14 +230,14 @@ export const Data = {
         "Headphones",
         "View All"
       ],
-      "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+      "images": "/assets/img/AK33-Lexon-tech.png",
     },
     "banner": 
       {
         "title": "New line required",
-        "product": "iPhone 12",
-        "price": "300 $",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "product": "Xiaomi Redmi Note 11S",
+        "price": "$136",
+        "images": "/assets/img/Xiaomi_Redmi_Note_11S.png",
       }
     
   },
@@ -247,17 +247,17 @@ export const Data = {
       {
         "name": "BenQ GW2790E",
         "price": "$131,21",
-        "image": "BenQ_GW2790E.png"
+        "image": "/assets/img/BenQ_GW2790E.png"
       },
       {
         "name": "Corsair VIRTUOSO RGB",
         "price": "$179,99",
-        "image": "Corsair_VIRTUOSO_RGB.png"
+        "image": "/assets/img/Corsair_VIRTUOSO_RGB.png"
       },
       {
         "name": "Logitech G502",
         "price": "$99,99",
-        "image": "Logitech_G502.png"
+        "image": "../assets/img/Logitech_G502.png"
       }
     ]
   },

@@ -42,7 +42,7 @@ export class AppProductDetailComponent {
   public controller: Controller;
   private routeSubscription: Subscription;
 
-  product: Product;
+  product: any;
   selectedImage!: string;
 
   constructor(

@@ -2,54 +2,62 @@
   <div class="container">
     <section class="hero pt-3">
       <div class="row">
-        <div class="col-lg-8 col-12">
+        <div class="col-xl-8 col-lg-12 col-12">
           <mdb-carousel [controls]="true">
-            <mdb-carousel-item *ngFor="let item of data.hero.banner_1; let i = index" [interval]="5000">
-              <div class="hero-banner-1" [style.background-image]="'url(' + item.img + ')'">
+            <mdb-carousel-item
+              *ngFor="let item of data.hero.banner_1; let i = index"
+              [interval]="5000">
+              <div
+                class="hero-banner-1"
+                [style.background-image]="'url(' + item.images + ')'">
                 <div class="content">
                   <h2>
-                    <span>{{item.subtitle}}</span>
-                    {{item.title}}
+                    <span>{{ item.subtitle }}</span>
+                    {{ item.title }}
                   </h2>
                   <p>
-                    {{item.content}}
+                    {{ item.content }}
                   </p>
                   <h3>
-                    <span>{{item.price_text}}</span>
-                    {{item.price}}
+                    <span>{{ item.price_text }}</span>
+                    {{ item.price }}
                   </h3>
                   <div class="button">
-                    <a href="#" type="button" class="btn btn-primary">{{item.button}}</a>
+                    <a href="#" type="button" class="btn btn-primary">{{
+                      item.button
+                    }}</a>
                   </div>
                 </div>
               </div>
             </mdb-carousel-item>
           </mdb-carousel>
         </div>
-        <div class="col-lg-4 col-12">
+        <div class="col-xl-4 col-lg-12 col-12">
           <div class="row">
             <div class="col-lg-12 col-md-6 col-12">
-              <div class="hero-banner-2">
+              <div class="hero-banner-2" [style.background-image]="'url(' + data.hero.banner_2.images + ')'">
                 <div class="row content">
                   <div class="col-8">
                     <h5>
-                      {{data.hero.banner_2.subtitle}}
+                      {{ data.hero.banner_2.subtitle }}
                     </h5>
                     <h2>
-                      {{data.hero.banner_2.title}}
+                      {{ data.hero.banner_2.title }}
                     </h2>
-                    <h3>{{data.hero.banner_2.price}}</h3>
+                    <h3>{{ data.hero.banner_2.price }}</h3>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-12 col-md-6 col-12">
-              <div class="hero-banner-3">
+            <div class="col-xl-12 col-lg-6 col-md-12 col-12">
+              <div class="hero-banner-3" [style.background-image]="'url(' + data.hero.banner_3.images + ')'">
                 <div class="content">
-                  <h2>{{data.hero.banner_3.title}}</h2>
-                  <p>{{data.hero.banner_3.content}}</p>
+                  <h2>{{ data.hero.banner_3.title }}</h2>
+                  <p>{{ data.hero.banner_3.content }}</p>
                   <div class="button">
-                    <a href="#" type="button" class="btn btn-primary">{{data.hero.banner_3.button}}</a>
+                    <a href="#" type="button" class="btn btn-primary">{{
+                      data.hero.banner_3.button
+                    }}</a>
                   </div>
                 </div>
               </div>
@@ -61,24 +69,29 @@
 
     <section class="featured-categories">
       <h2>
-        {{data.featuredCategories.title}}
+        {{ data.featuredCategories.title }}
       </h2>
-      <hr>
-      <p>{{data.featuredCategories.content}}</p>
+      <hr />
+      <p>{{ data.featuredCategories.content }}</p>
 
       <div class="content">
         <div class="row">
-          <div *ngFor="let category of data.featuredCategories.categories; let i = index"
-            class="col-lg-4 col-md-6 col-12">
+          <div
+            *ngFor="
+              let category of data.featuredCategories.categories;
+              let i = index
+            "
+            class="col-lg-4 col-md-6 col-12"
+          >
             <div class="category">
-              <h3>{{category.title}}</h3>
+              <h3>{{ category.title }}</h3>
               <ul>
                 <li *ngFor="let link of category.links">
-                  <a href="product-grids.html"> {{link}}</a>
+                  <a href="product-grids.html"> {{ link }}</a>
                 </li>
               </ul>
               <div class="images">
-                <img [src]="category.img" alt="#">
+                <img [src]="category.images" alt="#" />
               </div>
             </div>
           </div>
@@ -90,23 +103,32 @@
   <section class="section-products pt-5">
     <div class="container trending-products">
       <h2>
-        {{data.trendingProducts.title}}
+        {{ data.trendingProducts.title }}
       </h2>
-      <hr>
-      <p>{{data.trendingProducts.content}} </p>
+      <hr />
+      <p>{{ data.trendingProducts.content }}</p>
 
       <div class="content">
         <div class="row">
-          <div *ngFor="let product of data.trendingProducts.products;" class="col-md-3 col-6 card_container p-3"> 
+          <div
+            *ngFor="let product of data.trendingProducts.products"
+            class="col-md-3 col-6 card_container p-3"
+          >
             <div class="card">
               <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
-                <img [src]="product.img" class="img-fluid" [alt]="product.nombre" />
-                <a href="#!" class="btn btn-overlay"> <i class="fas fa-shopping-cart"></i> Shop</a>
+                <img
+                  [src]="product.images"
+                  class="img-fluid"
+                  [alt]="product.nombre"
+                />
+                <a href="#!" class="btn btn-overlay">
+                  <i class="fas fa-shopping-cart"></i> Shop</a
+                >
               </div>
               <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
                 <p class="card-text">{{ product.description }}</p>
-                <p class="card-text">Price: {{ product.price}}</p>
+                <p class="card-text">Price: {{ product.price }}</p>
               </div>
             </div>
           </div>
@@ -116,20 +138,23 @@
   </section>
   <section class="section-banners container">
     <div class="row">
-      <div *ngFor="let banner of data.sectionBanners.banners;" class="col-12 col-sm-6">
+      <div
+        *ngFor="let banner of data.sectionBanners.banners"
+        class="col-12 col-sm-6"
+      >
         <div class="banner">
           <div class="row content">
             <div class="col-8">
               <h5>
-                {{banner.title}}
+                {{ banner.title }}
               </h5>
               <h2>
-                {{banner.product}}
+                {{ banner.product }}
               </h2>
-              <h3>{{banner.price}}</h3>
+              <h3>{{ banner.price }}</h3>
             </div>
             <div class="col-4">
-              <img [src]="banner.img" alt="#" style="max-width: 100%;">
+              <img [src]="banner.images" alt="#" style="max-width: 100%" />
             </div>
           </div>
         </div>
@@ -141,28 +166,28 @@
       <h2>
         {{ data.sectionOffers.title }}
       </h2>
-      <hr>
+      <hr />
       <p>
-         {{ data.sectionOffers.content }}
+        {{ data.sectionOffers.content }}
       </p>
 
       <div class="content">
         <div class="row">
           <div class="col-md-8 col-12">
             <div class="row">
-
-              <div *ngFor="let product of data.sectionOffers.products_1;" class="col-lg-4 col-md-4 col-12">
+              <div
+                *ngFor="let product of data.sectionOffers.products_1"
+                class="col-lg-4 col-md-4 col-12"
+              >
                 <div class="offers">
                   <h3>{{ product.title }}</h3>
                   <ul>
                     <li *ngFor="let link of product.links">
-                      <a href="product-grids.html">{{link}}</a>
+                      <a href="product-grids.html">{{ link }}</a>
                     </li>
                   </ul>
                   <div class="images">
-                    <img
-                      [src]="product.img"
-                      alt="#">
+                    <img [src]="product.images" alt="Product Image" />
                   </div>
                 </div>
               </div>
@@ -182,17 +207,15 @@
             </div>
           </div>
           <div class="col-md-4 col-12">
-            <div class="offers" style="height: 95%;">
+            <div class="offers" style="height: 95%">
               <h3>{{ data.sectionOffers.products_2.title }}</h3>
               <ul>
                 <li *ngFor="let link of data.sectionOffers.products_2.links">
-                  <a href="product-grids.html">{{link}}</a>
+                  <a href="product-grids.html">{{ link }}</a>
                 </li>
               </ul>
               <div class="images">
-                <img
-                  [src]="data.sectionOffers.products_2.img"
-                  alt="#">
+                <img [src]="data.sectionOffers.products_2.images" alt="#" />
               </div>
             </div>
           </div>
@@ -201,16 +224,19 @@
     </div>
   </section>
 
-
   <section class="section-product-list">
     <div class="container">
       <div class="row">
-        <div *ngFor="let product of data.bestSellers.products" class="col-lg-4 col-md-4 col-12">
+        <div
+          *ngFor="let product of data.bestSellers.products"
+          class="col-lg-4 col-md-4 col-12"
+        >
           <h4 class="">{{ data.bestSellers.title }}</h4>
           <div class="single-list">
             <div class="list-image">
-              <a href="product-grids.html"><img
-                  src="https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg" alt="#"></a>
+              <a href="product-grids.html"
+                ><img src="{{ product.image }}" alt="#"
+              /></a>
             </div>
             <div class="list-info">
               <h3>
@@ -221,8 +247,9 @@
           </div>
           <div class="single-list">
             <div class="list-image">
-              <a href="product-grids.html"><img
-                  src="https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg" alt="#"></a>
+              <a href="product-grids.html"
+                ><img src="{{ product.image }}" alt="#"
+              /></a>
             </div>
             <div class="list-info">
               <h3>
@@ -233,8 +260,9 @@
           </div>
           <div class="single-list">
             <div class="list-image">
-              <a href="product-grids.html"><img
-                  src="https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg" alt="#"></a>
+              <a href="product-grids.html"
+                ><img src="{{ product.image }}" alt="#"
+              /></a>
             </div>
             <div class="list-info">
               <h3>
@@ -247,7 +275,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="section-info">
     <div class="container">
@@ -263,7 +290,5 @@
         </li>
       </ul>
     </div>
-
   </section>
 </div>
-

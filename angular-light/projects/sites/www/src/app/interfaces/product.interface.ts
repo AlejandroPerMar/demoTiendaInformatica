@@ -5,7 +5,7 @@ export interface Product {
   description: string;
   price: string;
   avatar: string;
-  images: { src: string }[];
+  images: { src: string , img:string}[];
   tags: string[];
   uuid: string;
 }

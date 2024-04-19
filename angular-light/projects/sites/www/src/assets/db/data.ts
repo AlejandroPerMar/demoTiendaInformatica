@@ -2,33 +2,23 @@ export const Data = {
   "hero": {
     "banner_1": [
       {
-        "subtitle": "Big Sale Offer1",
-        "title": "Get The Best Deal on CCTV Camera",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum praesentium et unde, magni rem aut dolore!",
-        "price_text": "Combo Only:",
-        "price": "590$",
+        "subtitle": "No restocking fee ($35 savings)",
+        "title": " M75 Sport Watch ",
+        "content": "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
+        "price_text": "Now Only",
+        "price": "$320.99",
         "button": "Shop Now",
-        "images": "/assets/img/banner1.png"
+        "images": "/assets/img/slider-bg1.jpg"
         //id de product?? o enlace
       },
       {
-        "subtitle": "BUenos dias kelpy",
+        "subtitle": "Big Sale Offer",
         "title": "Get The Best Deal on CCTV Camera",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum praesentium et unde, magni rem aut dolore!",
+        "content": "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
         "price_text": "Combo Only:",
         "price": "590$",
         "button": "Shop Now",
-        "images": "/assets/img/banner2.png"
-        //id de product?? o enlace
-      },
-      {
-        "subtitle": "Big Sale Offer3",
-        "title": "Get The Best Deal on CCTV Camera",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum praesentium et unde, magni rem aut dolore!",
-        "price_text": "Combo Only:",
-        "price": "590$",
-        "button": "Shop Now",
-        "images": "/assets/img/banner3.png"
+        "images": "/assets/img/slider-bg2.jpg"
         //id de product?? o enlace
       },
 
@@ -37,14 +27,14 @@ export const Data = {
       "subtitle": "New line required",
       "title": "iphone 13 pro max",
       "price": "590$",
-      "images": "/assets/img/banner3.png"
+      "images": "/assets/img/slider-bnr.jpg"
       //enlace
     },
     "banner_3": {
       "title": "Weekly Sale!",
       "content": "Saving up to 50% off all online store items this week.",
       "button": "Shop Now",
-      "images": "/assets/img/banner2.png"
+      "images": "/assets/img/small-banner-bg.png"
       //enlace
     }
   },
@@ -62,10 +52,10 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/category-item-1.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Desktop & Laptop",
         "links": [
           "Smart Television",
           "QLED TV",
@@ -73,10 +63,10 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/category-item-2.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Cctv Camera",
         "links": [
           "Smart Television",
           "QLED TV",
@@ -84,10 +74,10 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/category-item-3.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Dslr Camera",
         "links": [
           "Smart Television",
           "QLED TV",
@@ -95,10 +85,10 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/category-item-4.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Smart Phones",
         "links": [
           "Smart Television",
           "QLED TV",
@@ -106,10 +96,10 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/category-item-5.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Game Console",
         "links": [
           "Smart Television",
           "QLED TV",
@@ -117,7 +107,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/category-item-6.png"
       },
     ]
   },
@@ -128,41 +118,41 @@ export const Data = {
       {
         "name": "GoPro Hero4 Silver",
         "price": "$287.99",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/product-1.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/product-2.jpg"
       },
       {
         "name": "HP OfficeJet Pro 8710",
         "price": "$120.00",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/product-3.jpg"
       },
       {
         "name": "GoPro Hero4 Silver",
         "price": "$287.99",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/product-4.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/product-5.jpg"
       },
       {
         "name": "HP OfficeJet Pro 8710",
         "price": "$120.00",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/product-6.jpg"
       }, {
         "name": "GoPro Hero4 Silver",
         "price": "$287.99",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/product-7.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/product-8.jpg"
       }
     ]
   },
@@ -172,13 +162,13 @@ export const Data = {
         "title": "New line required",
         "product": "iPhone 12",
         "price": "300 $",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/banner-1-bg.jpg"
       },
       {
         "title": "New line required",
         "product": "iPhone 12 Pro Max",
         "price": "300 $",
-        "images": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "images": "/assets/img/banner-2-bg.jpg"
       }
     ]
   },
@@ -195,7 +185,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/Logitech-G502.png"
       },
       {
         "title": "TV & Audios",
@@ -206,7 +196,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/Epical-Q_Caraxes.png"
       },
       {
         "title": "TV & Audios",
@@ -217,7 +207,7 @@ export const Data = {
           "Headphones",
           "View All"
         ],
-        "images": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "images": "/assets/img/MSI_MEG_Trident_X2.png"
       }
     ],
     "products_2": 
@@ -230,14 +220,14 @@ export const Data = {
         "Headphones",
         "View All"
       ],
-      "images": "/assets/img/AK33-Lexon-tech.png",
+      "images": "/assets/img/Corsair_VIRTUOSO_RGB.png"
     },
     "banner": 
       {
-        "title": "New line required",
-        "product": "Xiaomi Redmi Note 11S",
+        "title": "Xiaomi Redmi Note 11S",
+        "product": "New line required",
         "price": "$136",
-        "images": "/assets/img/Xiaomi_Redmi_Note_11S.png",
+        "images": "/assets/img/banner-3-bg.jpg"
       }
     
   },
@@ -257,7 +247,7 @@ export const Data = {
       {
         "name": "Logitech G502",
         "price": "$99,99",
-        "image": "../assets/img/Logitech_G502.png"
+        "image": "/assets/img/Logitech-G502.png"
       }
     ]
   },

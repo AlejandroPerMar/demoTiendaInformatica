@@ -2,226 +2,228 @@ export const Data = {
   "hero": {
     "banner_1": [
       {
-        "subtitle": "Big Sale Offer1",
-        "title": "Get The Best Deal on CCTV Camera",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum praesentium et unde, magni rem aut dolore!",
-        "price_text": "Combo Only:",
-        "price": "590$",
+        "subtitle": "Gaming Keyboards",
+        "title": "Top Gaming Keyboards at Best Prices",
+        "content": "Discover our range of gaming keyboards designed for all gaming styles. Enjoy the best deals and level up your gaming setup!",
+        "price_text": "Prices Start at:",
+        "price": "$59",
         "button": "Shop Now",
         "img": "../../assets/img/banner1.png"
-        //id de product?? o enlace
       },
       {
-        "subtitle": "Big Sale Offer2",
-        "title": "Get The Best Deal on CCTV Camera",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum praesentium et unde, magni rem aut dolore!",
-        "price_text": "Combo Only:",
-        "price": "590$",
+        "subtitle": "Gaming Mice",
+        "title": "Enhance Your Gaming Experience with Precision Mice",
+        "content": "Get the latest gaming mice with adjustable DPI settings, ergonomic designs, and customizable buttons. Perfect for gamers seeking precision and comfort.",
+        "price_text": "Starting at:",
+        "price": "$49",
         "button": "Shop Now",
         "img": "../../assets/img/banner2.png"
-        //id de product?? o enlace
       },
       {
-        "subtitle": "Big Sale Offer3",
-        "title": "Get The Best Deal on CCTV Camera",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis sapiente exercitationem delectus quisquam incidunt voluptatibus ex accusamus, molestiae neque aspernatur. Ut laborum praesentium et unde, magni rem aut dolore!",
-        "price_text": "Combo Only:",
-        "price": "590$",
+        "subtitle": "Gaming Monitors",
+        "title": "Immersive Gaming Monitors for the Best Visuals",
+        "content": "Explore our collection of high-refresh-rate gaming monitors with stunning resolutions. Elevate your gaming experience with top-quality visuals.",
+        "price_text": "From:",
+        "price": "$199",
         "button": "Shop Now",
         "img": "../../assets/img/banner3.png"
-        //id de product?? o enlace
-      },
-
+      }
     ],
     "banner_2": {
-      "subtitle": "New line required",
-      "title": "iphone 13 pro max",
-      "price": "590$",
-      "img": "../../assets/img/banner3.png"
-      //enlace
+      "subtitle": "Smartphones & Accessories",
+      "title": "iPhone 12 Pro Max - Get Yours Now!",
+      "price": "$999",
+      "img": "../../assets/img/banner_4.png"
     },
     "banner_3": {
       "title": "Weekly Sale!",
-      "content": "Saving up to 50% off all online store items this week.",
+      "content": "Save up to 50% on all online store items this week. Hurry, offers end soon!",
       "button": "Shop Now",
       "img": "../../assets/img/banner3.png"
-      //enlace
     }
   },
-
+  
   "featuredCategories": {
     "title": "Featured Categories",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem nulla ut, vero fugiat eius rem corrupti, deserunt facere ex reiciendis ipsam maxime ratione expedita",
+    "content": "Explore our range of featured categories and find the perfect products for your needs. Shop now for exclusive deals.",
     "categories": [
       {
-        "title": "TV & Audios",
+        "title": "Headphones & Audio",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
           "Headphones",
+          "Bluetooth Earbuds",
+          "Sound Systems",
+          "Speakers",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "img": "../../assets/img/fetured-item-1.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Desktop & Laptop",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
           "Headphones",
+          "Bluetooth Earbuds",
+          "Sound Systems",
+          "Speakers",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "img": "../../assets/img/fetured-item-2.png"
+        
       },
       {
-        "title": "TV & Audios",
+        "title": "Cctv Camera",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
           "Headphones",
+          "Bluetooth Earbuds",
+          "Sound Systems",
+          "Speakers",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "img": "../../assets/img/fetured-item-3.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Dslr Camera",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
           "Headphones",
+          "Bluetooth Earbuds",
+          "Sound Systems",
+          "Speakers",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "img": "../../assets/img/fetured-item-4.png"
+        
       },
       {
-        "title": "TV & Audios",
+        "title": "Smart Phones",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
           "Headphones",
+          "Bluetooth Earbuds",
+          "Sound Systems",
+          "Speakers",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "img": "../../assets/img/fetured-item-5.png"
+
       },
       {
-        "title": "TV & Audios",
+        "title": "Game Console",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
           "Headphones",
+          "Bluetooth Earbuds",
+          "Sound Systems",
+          "Speakers",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
-      },
+        "img": "../../assets/img/fetured-item-6.png"
+
+      }
     ]
   },
+
   "trendingProducts": {
     "title": "Trending Products",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem nulla ut, vero fugiat eius rem corrupti, deserunt facere ex reiciendis ipsam maxime ratione expedita",
+    "content": "Check out our trending products and find the latest gadgets and accessories that everyone is talking about.",
     "products": [
       {
         "name": "GoPro Hero4 Silver",
         "price": "$287.99",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "img": "../../assets/img/product-1.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "img": "../../assets/img/product-2.jpg"
       },
       {
         "name": "HP OfficeJet Pro 8710",
         "price": "$120.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
-      },
-      {
-        "name": "GoPro Hero4 Silver",
-        "price": "$287.99",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "img": "../../assets/img/product-3.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "img": "../../assets/img/product-4.jpg"
       },
       {
         "name": "HP OfficeJet Pro 8710",
         "price": "$120.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
-      }, {
+        "img": "../../assets/img/product-5.jpg"
+      },
+      {
         "name": "GoPro Hero4 Silver",
         "price": "$287.99",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "img": "../../assets/img/product-6.jpg"
       },
       {
         "name": "Puro Sound Labs BT2200",
         "price": "$95.00",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "img": "../../assets/img/product-7.jpg"
+      },
+      {
+        "name": "Puro Sound Labs BT2200",
+        "price": "$95.00",
+        "img": "../../assets/img/product-8.jpg"
       }
     ]
   },
+
   "sectionBanners": {
     "banners": [
       {
-        "title": "New line required",
+        "title": "Limited Time Offer",
         "product": "iPhone 12",
-        "price": "300 $",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "price": "$699",
+        "img": "../../assets/img/banner-1-bg.jpg"
       },
       {
-        "title": "New line required",
+        "title": "Hot Deal!",
         "product": "iPhone 12 Pro Max",
-        "price": "300 $",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
+        "price": "$899",
+        "img": "../../assets/img/banner-2-bg.jpg"
       }
     ]
   },
+
   "sectionOffers": {
     "title": "Special Offers",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem nulla ut, vero fugiat eius rem corrupti, deserunt facere ex reiciendis ipsam maxime ratione expedita",
+    "content": "Don't miss our special offers on the latest electronics and accessories. Save big on top brands and exclusive deals.",
     "products_1": [
       {
-        "title": "TV & Audios",
+        "title": "Home Audio Systems",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
-          "Headphones",
+          "Soundbars",
+          "Bluetooth",
+          "Home Systems",
+          "AV Receivers",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "img": "../../assets/img/product-3-removebg-preview.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Smart TVs",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
-          "Headphones",
+          "4K Ultra HD TVs",
+          "OLED TVs",
+          "QLED TVs",
+          "LED TVs",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "img": "../../assets/img/product-8-removebg-preview.png"
       },
       {
-        "title": "TV & Audios",
+        "title": "Wearable Tech",
         "links": [
-          "Smart Television",
-          "QLED TV",
-          "Audios",
-          "Headphones",
+          "Smartwatches",
+          "Fitness Trackers",
+          "VR Headsets",
+          "Wireless Earbuds",
           "View All"
         ],
-        "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+        "img": "../../assets/img/product-6-removebg-preview.png"
       }
     ],
-    "products_2": 
-    {
+    
+    "products_2": {
       "title": "TV & Audios",
       "links": [
         "Smart Television",
@@ -230,17 +232,16 @@ export const Data = {
         "Headphones",
         "View All"
       ],
-      "img": "https://demo.graygrids.com/themes/shopgrids/assets/images/featured-categories/fetured-item-1.png"
+      "img": "../../assets/img/offer-image.jpg"
     },
-    "banner": 
-      {
-        "title": "New line required",
-        "product": "iPhone 12",
-        "price": "300 $",
-        "img": "https://cdn.pacifiko.com/image/cache/catalog/p/OGQ0Y2Y5Mm-484x484.jpg"
-      }
-    
+    "banner": {
+      "title": "Special Deal!",
+      "product": "iPhone 12",
+      "price": "$699",
+      "img": "../../assets/img/banner3.png"
+    }
   },
+
   "bestSellers": {
     "title": "Best Sellers",
     "products": [
@@ -265,23 +266,23 @@ export const Data = {
     "items": [
       {
         "title": "Free Shipping",
-        "text_price": "On order over",
+        "text_price": "On orders over",
         "price": "$99"
       },
       {
-        "title": "Free Shipping",
-        "text_price": "On order over",
-        "price": "$99"      
+        "title": "30-Day Returns",
+        "text_price": "No questions asked",
+        "price": ""
       },
       {
-        "title": "Free Shipping",
-        "text_price": "On order over",
-        "price": "$99"      
+        "title": "Customer Support",
+        "text_price": "Available 24/7",
+        "price": ""
       },
       {
-        "title": "Free Shipping",
-        "text_price": "On order over",
-        "price": "$99"      
+        "title": "Secure Payments",
+        "text_price": "100% secure transactions",
+        "price": ""
       }
     ]
   }
